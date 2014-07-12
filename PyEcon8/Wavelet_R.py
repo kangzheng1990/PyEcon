@@ -151,18 +151,9 @@ S=array([array(mrX.do_slot("S")[i])[0:TT].reshape(TT,) for i in range(level)])
 cyc=[2**(i+1) for i in range(level)]
 X=array(X)
 
-subplot(611);plot(range(TT),X,color='Green');subplot(612);plot(range(TT),W[0,:]);subplot(613);plot(range(TT),W[1,:]);subplot(614);plot(range(TT),W[2,:]);subplot(615);plot(range(TT),W[3,:]);subplot(616);plot(range(TT),V[3,:]);show()
+subplot(711);plot(range(TT),X,color='Green');subplot(712);plot(range(TT),D[0,:]);subplot(713);plot(range(TT),D[1,:]);subplot(714);plot(range(TT),D[2,:]);subplot(715);plot(range(TT),D[3,:]);subplot(716);plot(range(TT),D[4,:]);subplot(717);plot(range(TT),S[4,:]);show()
+
 
 """[/python]
-
-
-
-
-
-
-
-
-
-
-
+"""
 
