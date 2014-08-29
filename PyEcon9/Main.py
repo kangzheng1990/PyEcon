@@ -52,7 +52,7 @@ TT=DD.shape[0]
 
 
 # /// Number of particles ///
-NN = 3
+NN = 50
 
 # /// Time iter Config ///
 Lag = 1 # Maximum lag used in Obs or Exo function
@@ -86,7 +86,7 @@ x2_0 = zeros(nx**2)
 pars_0=array([1.,1.,6.,0.75,0.8,1.5,0.25,0.8,0.9,0.8])
 pars_s=array([0.001,0.001,0.001,0.001,0.001,0.001,0.001,0.001,0.001,0.001])
 
-sigs_0=array([0.025,0.025,0.025,0.025])
+sigs_0=array([0.005,0.005,0.005,0.005])
 sigs_s=array([0.001,0.001,0.001,0.001])
 
 
@@ -820,7 +820,7 @@ Yhat = pd.DataFrame(array(othpath).T[obsYflag].T,index=DD.index[start:],columns=
 # pd.Series([Xhat[t]['pars'][0] for t in range(len(Xhat))],index=pd.period_range(DD.index[start],periods=len(Xhat))).plot()
 
 
-# Yhat['gdp'].plot();DD['gdp'][start:].plot()
+# Yhat['con'].plot();DD['con'][start:].plot()
 
 
 
